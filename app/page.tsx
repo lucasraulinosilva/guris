@@ -46,13 +46,13 @@ export default function Home() {
         <img src="/imagem_principal.jpg" alt="" className="brightness-50 h-150 md:h-screen w-full bg-center" />
         <div className="absolute top-0 right-0 w-full h-screen">
           <nav className="w-19/20 mx-auto bg-[#E25829] h-15 m-5 rounded-xl flex flex-row text-[#F0EFDB]">
-            <div className="basis-3/7 text-lg flex flex-row">
+            <div className="md:basis-3/7 text-lg flex flex-row">
               <p className={`${font_padrao_bold.className} mt-4 ms-4 me-2 underline cursor-pointer hidden md:flex`}>Início</p>
               <p className={`${font_padrao_bold.className} mt-4 ms-2 me-2 underline cursor-pointer hidden md:flex`}>Pacotes</p>
               <p className={`${font_padrao_bold.className} mt-4 ms-2 me-2 underline cursor-pointer hidden md:flex`}>Promoções</p>
               <p className={`${font_padrao_bold.className} mt-4 ms-2 me-2 underline cursor-pointer hidden md:flex`}>Hotéis</p>
             </div>
-            <div className="basis-1/7 text-center ">
+            <div className="basis-1/1 md:basis-1/7 text-center ">
               <h1 className={`${font_titulo.className} mt-4`}>GURI'S</h1>
             </div>
             <div className="md:basis-3/7">
@@ -87,11 +87,11 @@ export default function Home() {
 
         <div id="saiba_mais" className="w-full">
           <div className="flex flex-row mx-auto p-5">
-            <div className="hidden md:flex basis-1/2 p-5 mt-[40] mb-[70] z-2">
+            <div className="hidden md:flex basis-1/2 p-5 mt-[40] mb-[70]">
               <img src="/relaxa.png" />
             </div>
-            <div className="basis-1/2 p-5 mt-[40] mb-[70] z-2">
-              <h1 className={`${font_fundo.className} text-[#E25829] text-4xl md:text-[100px]`}>TRANQUILIDADE</h1>
+            <div className="basis-1/2 p-5 mt-[40] mb-[70]">
+              <h1 className={`${font_fundo.className} text-[#E25829] text-3xl md:text-[100px]`}>TRANQUILIDADE</h1>
               <div className="w-full">
                 <h1 className={`${font_padrao_bold.className} text-5xl  underline decoration-[#E25829] decoration-double`}>Viagens Tranquilas.</h1>
                 <p className={`${font_padrao.className} text-sm text-black/75 mt-3`}>Sempre bem, sem preocupações e estresse, escolha já seu próximo destino.</p>
