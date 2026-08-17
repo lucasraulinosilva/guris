@@ -87,11 +87,11 @@ export default function Home() {
 
         <div id="saiba_mais" className="w-full">
           <div className="flex flex-row mx-auto p-5">
-            <div className="hidden md:flex basis-1/2 p-5 mt-[40] mb-[70]">
+            <div className="hidden 2xl:flex basis-1/2 p-5 mt-[40] mb-[70]">
               <img src="/relaxa.png" />
             </div>
-            <div className="basis-1/2 p-5 mt-[40] mb-[70]">
-              <h1 className={`${font_fundo.className} text-[#E25829] text-3xl md:text-[100px]`}>TRANQUILIDADE</h1>
+            <div className="md:mx-auto md:w-1/2 2xl:basis-1/2 2xl:w-auto p-5 mt-[40] mb-[70]">
+              <h1 className={`${font_fundo.className} text-[#E25829] text-3xl md:text-[60px] 2xl:text-[100px]`}>TRANQUILIDADE</h1>
               <div className="w-full">
                 <h1 className={`${font_padrao_bold.className} text-5xl  underline decoration-[#E25829] decoration-double`}>Viagens Tranquilas.</h1>
                 <p className={`${font_padrao.className} text-sm text-black/75 mt-3`}>Sempre bem, sem preocupações e estresse, escolha já seu próximo destino.</p>
@@ -250,7 +250,7 @@ export default function Home() {
         <div className="w-full md:w-2/3 md:mx-auto flex flex-col md:flex-row">
           <div className="w-full md:mt-[100] md:mb-[100] mb-5">
             <h1 className={`${font_padrao_bold.className} text-5xl mt-8 underline decoration-[#E25829] decoration-double`}>Melhores Promoções</h1>
-            <p className={`${font_padrao.className} text-lg mt-2`}>Guri's possui as melhores promoções e assistência ao cliente, com inúmeros serviços para tornar a viagem ainda mais tranquila.</p>
+            <p className={`${font_padrao.className} text-lg mt-2`}>Sempre o melhor preço, para o melhor lugar.</p>
 
             <div className="w-full flex flex-col md:flex-row mt-3 md:h-[600]">
 
