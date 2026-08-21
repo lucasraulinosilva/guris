@@ -1,6 +1,6 @@
 import Image from "next/image";
 import localFont from 'next/font/local';
-import { useInView } from 'react-intersection-observer';
+import Link from 'next/link'
 
 const font_titulo = localFont({
   src: [
@@ -47,13 +47,12 @@ export default function Home() {
         <div className="absolute top-0 right-0 w-full h-screen">
           <nav className="w-19/20 mx-auto bg-[#E25829] h-15 m-5 rounded-xl flex flex-row text-[#F0EFDB]">
             <div className="md:basis-3/7 text-lg flex flex-row">
-              <p className={`${font_padrao_bold.className} mt-4 ms-4 me-2 underline cursor-pointer hidden md:flex`}>Início</p>
-              <p className={`${font_padrao_bold.className} mt-4 ms-2 me-2 underline cursor-pointer hidden md:flex`}>Pacotes</p>
-              <p className={`${font_padrao_bold.className} mt-4 ms-2 me-2 underline cursor-pointer hidden md:flex`}>Promoções</p>
-              <p className={`${font_padrao_bold.className} mt-4 ms-2 me-2 underline cursor-pointer hidden md:flex`}>Hotéis</p>
+              <img src="/logo_agencia.png" alt="" className='p-1' />
+              <Link href="/"><p className={`${font_padrao_bold.className} mt-4 ms-4 me-2 underline cursor-pointer hidden md:flex`}>Início</p></Link>
+              <Link href="/promos"><p className={`${font_padrao_bold.className} mt-4 ms-2 me-2 underline cursor-pointer hidden md:flex`}>Promoções</p></Link>
             </div>
             <div className="basis-1/1 md:basis-1/7 text-center ">
-              <h1 className={`${font_titulo.className} mt-4`}>GURI'S</h1>
+              <h1 className={`${font_titulo.className} mt-4`}>SCJ</h1>
             </div>
             <div className="md:basis-3/7">
 
@@ -70,7 +69,7 @@ export default function Home() {
             </div>
             <div className="basis-3/7 text-left text-[#F0EFDB] text-lg p-3">
               <div className="w-80">
-                <p className={`${font_padrao.className}`}>Guri's possui as melhores promoções e assistência ao cliente, com inúmeros serviços para tornar a viagem ainda mais tranquila.</p>
+                <p className={`${font_padrao.className}`}>SCJ possui as melhores promoções e assistência ao cliente, com inúmeros serviços para tornar a viagem ainda mais tranquila.</p>
                 <a href="#saiba_mais">
                   <button className={`${font_padrao_bold.className} bg-[#E25829] p-3 ps-5 pe-5 rounded-full hover:bg-[#E25829]/80 cursor-pointer mt-2`}>Saiba Mais</button>
                 </a>
@@ -78,7 +77,7 @@ export default function Home() {
             </div>
           </div>
           <div className="w-full text-center hidden md:block">
-            <h1 className={`${font_titulo.className} text-[#F0EFDB] text-[200px] animate-fade-up`}>GURI'S</h1>
+            <h1 className={`${font_titulo.className} text-[#F0EFDB] text-[200px] animate-fade-up`}>SCJ</h1>
           </div>
         </div>
       </div>
@@ -93,7 +92,7 @@ export default function Home() {
             <div className="md:mx-auto md:w-1/2 2xl:basis-1/2 2xl:w-auto p-5 mt-[40] mb-[70]">
               <h1 className={`${font_fundo.className} text-[#E25829] text-3xl md:text-[60px] 2xl:text-[100px]`}>TRANQUILIDADE</h1>
               <div className="w-full">
-                <h1 className={`${font_padrao_bold.className} text-5xl  underline decoration-[#E25829] decoration-double`}>Viagens Tranquilas.</h1>
+                <h1 className={`${font_padrao_bold.className} text-5xl underline decoration-[#E25829] decoration-double`}>Viagens Tranquilas.</h1>
                 <p className={`${font_padrao.className} text-sm text-black/75 mt-3`}>Sempre bem, sem preocupações e estresse, escolha já seu próximo destino.</p>
                 <table className={`w-full mt-2`}>
                   <thead>
@@ -243,8 +242,8 @@ export default function Home() {
 
       <div className="bg-[#1C1314] w-full text-[#F0EFDB] relative p-5 md:p-0">
 
-        <div className="hidden md:absolute w-full text-center z-1">
-          <h1 className={`${font_titulo.className} text-[#F0EFDB] text-[350px] mt-[180]`}>GURI'S</h1>
+        <div className="hidden md:block md:absolute w-full text-center z-1">
+          <h1 className={`${font_titulo.className} text-[#F0EFDB] text-[450px] mt-[180]`}>SCJ</h1>
         </div>
 
         <div className="w-full md:w-2/3 md:mx-auto flex flex-col md:flex-row">
@@ -265,7 +264,7 @@ export default function Home() {
                   <p className={`${font_padrao.className} text-sm mt-5 text-[#F0EFDB]/75`}>Ida e volta</p>
                   <p className={`${font_padrao_bold.className} text-2xl mt-1`}>5X de R$ 344</p>
                   <p className={`${font_padrao.className} text-sm text-[#F0EFDB]/75 mt-1`}>A partir de R$1.718</p>
-                  <h1 className={`${font_titulo.className} text-3xl mt-3 cursor-pointer w-fit hover:animate-wiggle animate-once`} >GO!</h1>
+                  <a href="/promos"><h1 className={`${font_titulo.className} text-3xl mt-3 cursor-pointer w-fit hover:animate-wiggle animate-once`} >GO!</h1></a>
                 </div>
               </div>
 
@@ -280,11 +279,11 @@ export default function Home() {
                   <p className={`${font_padrao.className} text-sm mt-5 text-[#F0EFDB]/75`}>Ida e volta</p>
                   <p className={`${font_padrao_bold.className} text-2xl mt-1`}>4X de R$ 463</p>
                   <p className={`${font_padrao.className} text-sm text-[#F0EFDB]/75 mt-1`}>A partir de R$1.852</p>
-                  <h1 className={`${font_titulo.className} text-3xl mt-3 cursor-pointer w-fit hover:animate-wiggle animate-once`} >GO!</h1>
+                  <a href="/promos"><h1 className={`${font_titulo.className} text-3xl mt-3 cursor-pointer w-fit hover:animate-wiggle animate-once`} >GO!</h1></a>
                 </div>
               </div>
 
-              <div className="basis-1/3 mb-5 md:mb-0 md:me-5 rounded-xl shadow-md shadow-black/50 z-2 bg-[#1C1314]/90">
+              <div className="basis-1/3 mb-5 md:mb-0  rounded-xl shadow-md shadow-black/50 z-2 bg-[#1C1314]/90">
                 <img src="/disney.jpg" alt="" className="h-[250] w-full rounded-xl" />
                 <div className="p-5">
                   <img src="/airplan.png" alt="" />
@@ -295,7 +294,7 @@ export default function Home() {
                   <p className={`${font_padrao.className} text-sm mt-5 text-[#F0EFDB]/75`}>Ida e volta</p>
                   <p className={`${font_padrao_bold.className} text-2xl mt-1`}>4X de R$ 1048</p>
                   <p className={`${font_padrao.className} text-sm text-[#F0EFDB]/75 mt-1`}>A partir de R$4.191</p>
-                  <h1 className={`${font_titulo.className} text-3xl mt-3 cursor-pointer w-fit hover:animate-wiggle animate-once`} >GO!</h1>
+                  <a href="/promos"><h1 className={`${font_titulo.className} text-3xl mt-3 cursor-pointer w-fit hover:animate-wiggle animate-once`} >GO!</h1></a>
                 </div>
               </div>
 

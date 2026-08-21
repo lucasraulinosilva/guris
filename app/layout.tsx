@@ -23,6 +23,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className="scroll-smooth"
     >
+      <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css" />
+      </head>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
