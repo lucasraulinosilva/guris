@@ -1,10 +1,6 @@
 @import "tailwindcss";
 @import "tailwindcss-animated";
 
-:root {
-  color-scheme: light only;
-}
-
 @keyframes marquee-x {
   from {
     transform: translateX(0);

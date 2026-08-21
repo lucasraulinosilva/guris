@@ -52,7 +52,7 @@ export default function Home() {
               <Link href="/promos"><p className={`${font_padrao_bold.className} mt-4 ms-2 me-2 underline cursor-pointer hidden md:flex`}>Promoções</p></Link>
             </div>
             <div className="basis-1/1 md:basis-1/7 text-center ">
-              <h1 className={`${font_titulo.className} mt-4`}>SCJ</h1>
+          <h1 className={`${font_titulo.className} mt-4 float-end me-2 md:me-0 md:float-none`}>SCJ</h1>
             </div>
             <div className="md:basis-3/7">
 

@@ -56,7 +56,7 @@ export default function Promos() {
           <Link href="/promos"><p className={`${font_padrao_bold.className} mt-4 ms-2 me-2 underline cursor-pointer hidden md:flex`}>Promoções</p></Link>
         </div>
         <div className="basis-1/1 md:basis-1/7 text-center ">
-          <h1 className={`${font_titulo.className} mt-4`}>SCJ</h1>
+          <h1 className={`${font_titulo.className} mt-4 float-end me-2 md:me-0 md:float-none`}>SCJ</h1>
         </div>
         <div className="md:basis-3/7">
 
@@ -132,8 +132,8 @@ export default function Promos() {
       <div className='bg-[#E25829]'>
         <div className='p-2 flex md:flex-row flex-col flex-wrap justify-around md:p-5'>
           <div className='group relative me-5'>
-            <h1 className={`${font_letreiro.className} text-8xl text-[#F0EFDB] cursor-pointer hover:bg-[#F0EFDB] md:transition-colors md:duration-300 hover:-skew-y-3 hover:-inset-1 hover:italic hover:text-black`}>Rio de Janeiro</h1>
-            <div className="bg-[#F0EFDB]/90 w-xs absolute top-full ms-50 md:ms-0 md:left-1/2 -translate-x-1/2 mb-2 hidden group-active:block group-focus:block group-hover:block w-100 p-3 z-50 transition-opacity">
+            <h1 className={`${font_letreiro.className} text-4xl md:text-8xl text-[#F0EFDB] cursor-pointer hover:bg-[#F0EFDB] md:transition-colors md:duration-300 hover:-skew-y-3 hover:-inset-1 hover:italic hover:text-black select-none`}>Rio de Janeiro</h1>
+            <div className="bg-[#F0EFDB]/90 w-xs absolute top-full ms-50 md:ms-0 md:left-1/2 -translate-x-1/2 mb-2 hidden group-active:block group-focus:block group-hover:block w-100 p-3 z-50 transition-opacity ">
               <h1 className={`${font_titulo.className}`}>Copacabana</h1>
               <img src="/copacabana.jpg" alt="" />
               <p className={`${font_padrao.className} p-1 w-full`}><span className='border-r-3 border-b-3'>13:30</span>Santos Dumont<span className='border-r-3 border-b-3 float-end'>5x de R$ 344 — ida e volta</span></p>
@@ -144,8 +144,8 @@ export default function Promos() {
             </div>
           </div>
           <div className='group relative me-5'>
-            <h1 className={`${font_letreiro.className} text-8xl text-[#F0EFDB] cursor-pointer hover:bg-[#F0EFDB] md:transition-colors md:duration-300 hover:-skew-y-3 hover:-inset-1 hover:italic hover:text-black`}>Rio de Janeiro</h1>
-            <div className="bg-[#F0EFDB]/90 absolute top-full left-1/2 -translate-x-1/2 mb-2 hidden group-focus:block group-hover:block w-100 p-3 z-50 transition-opacity">
+            <h1 className={`${font_letreiro.className} text-4xl md:text-8xl text-[#F0EFDB] cursor-pointer hover:bg-[#F0EFDB] md:transition-colors md:duration-300 hover:-skew-y-3 hover:-inset-1 hover:italic hover:text-black select-none`}>Rio de Janeiro</h1>
+            <div className="bg-[#F0EFDB]/90 w-xs absolute top-full ms-50 md:ms-0 md:left-1/2 -translate-x-1/2 mb-2 hidden group-active:block group-focus:block group-hover:block w-100 p-3 z-50 transition-opacity ">
               <h1 className={`${font_titulo.className}`}>Copacabana</h1>
               <img src="/copacabana.jpg" alt="" />
               <p className={`${font_padrao.className} p-1 w-full`}><span className='border-r-3 border-b-3'>13:30</span>Santos Dumont<span className='border-r-3 border-b-3 float-end'>5x de R$ 344 — ida e volta</span></p>
@@ -155,83 +155,6 @@ export default function Promos() {
               <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>22:30</span>Santos Dumont<span className='border-r-3 border-b-3 float-end'>4x de R$ — 493 ida e volta</span></p>
             </div>
           </div>
-          <div className='group relative me-5'>
-            <h1 className={`${font_letreiro.className} text-8xl text-[#F0EFDB] cursor-pointer hover:bg-[#F0EFDB] md:transition-colors md:duration-300 hover:-skew-y-3 hover:-inset-1 hover:italic hover:text-black`}>Rio de Janeiro</h1>
-            <div className="bg-[#F0EFDB]/90 absolute top-full left-1/2 -translate-x-1/2 mb-2 hidden group-focus:block group-hover:block w-100 p-3 z-50 transition-opacity">
-              <h1 className={`${font_titulo.className}`}>Copacabana</h1>
-              <img src="/copacabana.jpg" alt="" />
-              <p className={`${font_padrao.className} p-1 w-full`}><span className='border-r-3 border-b-3'>13:30</span>Santos Dumont<span className='border-r-3 border-b-3 float-end'>5x de R$ 344 — ida e volta</span></p>
-              <p className={`${font_padrao.className} p-1`}><span className='border-r-3 border-b-3'>15:30</span>Galeão<span className='border-r-3 border-b-3 float-end'>3x de R$ 630 — ida e volta</span></p>
-              <p className={`${font_padrao.className} p-1`}><span className='border-r-3 border-b-3'>18:00</span>Galeão<span className='border-r-3 border-b-3 float-end'>2x de R$ 504 — ida e volta</span></p>
-              <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>10:00</span>Santos Dumont<span className='border-r-3 border-b-3 float-end'>6x de R$ — 122 ida e volta</span></p>
-              <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>22:30</span>Santos Dumont<span className='border-r-3 border-b-3 float-end'>4x de R$ — 493 ida e volta</span></p>
-            </div>
-          </div>
-          <div className='group relative me-5'>
-            <h1 className={`${font_letreiro.className} text-8xl text-[#F0EFDB] cursor-pointer hover:bg-[#F0EFDB] md:transition-colors md:duration-300 hover:-skew-y-3 hover:-inset-1 hover:italic hover:text-black`}>Rio de Janeiro</h1>
-            <div className="bg-[#F0EFDB]/90 absolute top-full left-1/2 -translate-x-1/2 mb-2 hidden group-focus:block group-hover:block w-100 p-3 z-50 transition-opacity">
-              <h1 className={`${font_titulo.className}`}>Copacabana</h1>
-              <img src="/copacabana.jpg" alt="" />
-              <p className={`${font_padrao.className} p-1 w-full`}><span className='border-r-3 border-b-3'>13:30</span>Santos Dumont<span className='border-r-3 border-b-3 float-end'>5x de R$ 344 — ida e volta</span></p>
-              <p className={`${font_padrao.className} p-1`}><span className='border-r-3 border-b-3'>15:30</span>Galeão<span className='border-r-3 border-b-3 float-end'>3x de R$ 630 — ida e volta</span></p>
-              <p className={`${font_padrao.className} p-1`}><span className='border-r-3 border-b-3'>18:00</span>Galeão<span className='border-r-3 border-b-3 float-end'>2x de R$ 504 — ida e volta</span></p>
-              <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>10:00</span>Santos Dumont<span className='border-r-3 border-b-3 float-end'>6x de R$ — 122 ida e volta</span></p>
-              <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>22:30</span>Santos Dumont<span className='border-r-3 border-b-3 float-end'>4x de R$ — 493 ida e volta</span></p>
-            </div>
-          </div>
-          <div className='group relative me-5'>
-            <h1 className={`${font_letreiro.className} text-8xl text-[#F0EFDB] cursor-pointer hover:bg-[#F0EFDB] md:transition-colors md:duration-300 hover:-skew-y-3 hover:-inset-1 hover:italic hover:text-black`}>Rio de Janeiro</h1>
-            <div className="bg-[#F0EFDB]/90 absolute top-full left-1/2 -translate-x-1/2 mb-2 hidden group-focus:block group-hover:block w-100 p-3 z-50 transition-opacity">
-              <h1 className={`${font_titulo.className}`}>Copacabana</h1>
-              <img src="/copacabana.jpg" alt="" />
-              <p className={`${font_padrao.className} p-1 w-full`}><span className='border-r-3 border-b-3'>13:30</span>Santos Dumont<span className='border-r-3 border-b-3 float-end'>5x de R$ 344 — ida e volta</span></p>
-              <p className={`${font_padrao.className} p-1`}><span className='border-r-3 border-b-3'>15:30</span>Galeão<span className='border-r-3 border-b-3 float-end'>3x de R$ 630 — ida e volta</span></p>
-              <p className={`${font_padrao.className} p-1`}><span className='border-r-3 border-b-3'>18:00</span>Galeão<span className='border-r-3 border-b-3 float-end'>2x de R$ 504 — ida e volta</span></p>
-              <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>10:00</span>Santos Dumont<span className='border-r-3 border-b-3 float-end'>6x de R$ — 122 ida e volta</span></p>
-              <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>22:30</span>Santos Dumont<span className='border-r-3 border-b-3 float-end'>4x de R$ — 493 ida e volta</span></p>
-            </div>
-          </div>
-          <div className='group relative me-5'>
-            <h1 className={`${font_letreiro.className} text-8xl text-[#F0EFDB] cursor-pointer hover:bg-[#F0EFDB] md:transition-colors md:duration-300 hover:-skew-y-3 hover:-inset-1 hover:italic hover:text-black`}>Rio de Janeiro</h1>
-            <div className="bg-[#F0EFDB]/90 absolute top-full left-1/2 -translate-x-1/2 mb-2 hidden group-focus:block group-hover:block w-100 p-3 z-50 transition-opacity">
-              <h1 className={`${font_titulo.className}`}>Copacabana</h1>
-              <img src="/copacabana.jpg" alt="" />
-              <p className={`${font_padrao.className} p-1 w-full`}><span className='border-r-3 border-b-3'>13:30</span>Santos Dumont<span className='border-r-3 border-b-3 float-end'>5x de R$ 344 — ida e volta</span></p>
-              <p className={`${font_padrao.className} p-1`}><span className='border-r-3 border-b-3'>15:30</span>Galeão<span className='border-r-3 border-b-3 float-end'>3x de R$ 630 — ida e volta</span></p>
-              <p className={`${font_padrao.className} p-1`}><span className='border-r-3 border-b-3'>18:00</span>Galeão<span className='border-r-3 border-b-3 float-end'>2x de R$ 504 — ida e volta</span></p>
-              <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>10:00</span>Santos Dumont<span className='border-r-3 border-b-3 float-end'>6x de R$ — 122 ida e volta</span></p>
-              <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>22:30</span>Santos Dumont<span className='border-r-3 border-b-3 float-end'>4x de R$ — 493 ida e volta</span></p>
-            </div>
-          </div>
-          <div className='group relative me-5'>
-            <h1 className={`${font_letreiro.className} text-8xl text-[#F0EFDB] cursor-pointer hover:bg-[#F0EFDB] md:transition-colors md:duration-300 hover:-skew-y-3 hover:-inset-1 hover:italic hover:text-black`}>Rio de Janeiro</h1>
-            <div className="bg-[#F0EFDB]/90 absolute top-full left-1/2 -translate-x-1/2 mb-2 hidden group-focus:block group-hover:block w-100 p-3 z-50 transition-opacity">
-              <h1 className={`${font_titulo.className}`}>Copacabana</h1>
-              <img src="/copacabana.jpg" alt="" />
-              <p className={`${font_padrao.className} p-1 w-full`}><span className='border-r-3 border-b-3'>13:30</span>Santos Dumont<span className='border-r-3 border-b-3 float-end'>5x de R$ 344 — ida e volta</span></p>
-              <p className={`${font_padrao.className} p-1`}><span className='border-r-3 border-b-3'>15:30</span>Galeão<span className='border-r-3 border-b-3 float-end'>3x de R$ 630 — ida e volta</span></p>
-              <p className={`${font_padrao.className} p-1`}><span className='border-r-3 border-b-3'>18:00</span>Galeão<span className='border-r-3 border-b-3 float-end'>2x de R$ 504 — ida e volta</span></p>
-              <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>10:00</span>Santos Dumont<span className='border-r-3 border-b-3 float-end'>6x de R$ — 122 ida e volta</span></p>
-              <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>22:30</span>Santos Dumont<span className='border-r-3 border-b-3 float-end'>4x de R$ — 493 ida e volta</span></p>
-            </div>
-          </div>
-          <div className='group relative'>
-            <h1 className={`${font_letreiro.className} text-8xl text-[#F0EFDB] cursor-pointer hover:bg-[#F0EFDB] transition-colors duration-300 hover:-skew-y-3 hover:-inset-1 hover:italic hover:text-black`}>Xangai</h1>
-            <div className="bg-[#F0EFDB]/90 absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden group-hover:block w-100 p-3 z-50 transition-opacity">
-              <h1 className={`${font_titulo.className}`}>Xintiandi</h1>
-              <img src="/xintiandi.jpg" alt="" />
-              <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>13:30</span>Xangai Pudong</p>
-              <p className={`${font_padrao.className} p-1`}><span className='border-r-3 border-b-3'>15:30</span>Xangai Pudong</p>
-              <p className={`${font_padrao.className} p-1`}><span className='border-r-3 border-b-3'>18:00</span>Xangai Pudong</p>
-              <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>10:00</span>Xangai Pudong</p>
-              <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>22:30</span>Xangai Pudong</p>
-            </div>
-          </div>
-          <h1 className={`${font_letreiro.className} text-8xl text-[#F0EFDB] cursor-pointer hover:bg-[#F0EFDB] transition-colors duration-300 hover:-skew-y-3 hover:-inset-1 hover:italic hover:text-black`}>Malé</h1>
-          <h1 className={`${font_letreiro.className} text-8xl text-[#F0EFDB] cursor-pointer hover:bg-[#F0EFDB] transition-colors duration-300 hover:-skew-y-3 hover:-inset-1 hover:italic hover:text-black`}>Ulan Bator</h1>
-          <h1 className={`${font_letreiro.className} text-8xl text-[#F0EFDB] cursor-pointer hover:bg-[#F0EFDB] transition-colors duration-300 hover:-skew-y-3 hover:-inset-1 hover:italic hover:text-black`}>Katmandu</h1>
-          <h1 className={`${font_letreiro.className} text-8xl text-[#F0EFDB] cursor-pointer hover:bg-[#F0EFDB] transition-colors duration-300 hover:-skew-y-3 hover:-inset-1 hover:italic hover:text-black`}>Oslo</h1>
-          <h1 className={`${font_letreiro.className} text-8xl text-[#F0EFDB] cursor-pointer hover:bg-[#F0EFDB] transition-colors duration-300 hover:-skew-y-3 hover:-inset-1 hover:italic hover:text-black`}>Seul</h1>
         </div>
       </div>
 
