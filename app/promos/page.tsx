@@ -130,75 +130,208 @@ export default function Promos() {
         </div>
       </div>
       <div className='bg-[#E25829]'>
-        <div className='p-2 flex md:flex-row flex-col flex-wrap justify-around md:p-5'>
-          <div className='group relative me-5'>
-            <h1 className={`${font_letreiro.className} text-4xl md:text-8xl text-[#F0EFDB] cursor-pointer hover:bg-[#F0EFDB] md:transition-colors md:duration-300 hover:-skew-y-3 hover:-inset-1 hover:italic hover:text-black select-none`}>Rio de Janeiro</h1>
-            <div className="bg-[#F0EFDB]/90 w-xs absolute top-full ms-50 md:ms-0 md:left-1/2 -translate-x-1/2 mb-2 hidden group-active:block group-focus:block group-hover:block w-100 p-3 z-50 transition-opacity ">
-              <h1 className={`${font_titulo.className}`}>Copacabana</h1>
-              <img src="/copacabana.jpg" alt="" />
-              <p className={`${font_padrao.className} p-1 w-full`}><span className='border-r-3 border-b-3'>13:30</span>Santos Dumont<span className='border-r-3 border-b-3 float-end'>5x de R$ 344 — ida e volta</span></p>
-              <p className={`${font_padrao.className} p-1`}><span className='border-r-3 border-b-3'>15:30</span>Galeão<span className='border-r-3 border-b-3 float-end'>3x de R$ 630 — ida e volta</span></p>
-              <p className={`${font_padrao.className} p-1`}><span className='border-r-3 border-b-3'>18:00</span>Galeão<span className='border-r-3 border-b-3 float-end'>2x de R$ 504 — ida e volta</span></p>
-              <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>10:00</span>Santos Dumont<span className='border-r-3 border-b-3 float-end'>6x de R$ — 122 ida e volta</span></p>
-              <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>22:30</span>Santos Dumont<span className='border-r-3 border-b-3 float-end'>4x de R$ — 493 ida e volta</span></p>
-            </div>
-          </div>
-          <div className='group relative me-5'>
-            <h1 className={`${font_letreiro.className} text-4xl md:text-8xl text-[#F0EFDB] cursor-pointer hover:bg-[#F0EFDB] md:transition-colors md:duration-300 hover:-skew-y-3 hover:-inset-1 hover:italic hover:text-black select-none`}>Rio de Janeiro</h1>
-            <div className="bg-[#F0EFDB]/90 w-xs absolute top-full ms-50 md:ms-0 md:left-1/2 -translate-x-1/2 mb-2 hidden group-active:block group-focus:block group-hover:block w-100 p-3 z-50 transition-opacity ">
-              <h1 className={`${font_titulo.className}`}>Copacabana</h1>
-              <img src="/copacabana.jpg" alt="" />
-              <p className={`${font_padrao.className} p-1 w-full`}><span className='border-r-3 border-b-3'>13:30</span>Santos Dumont<span className='border-r-3 border-b-3 float-end'>5x de R$ 344 — ida e volta</span></p>
-              <p className={`${font_padrao.className} p-1`}><span className='border-r-3 border-b-3'>15:30</span>Galeão<span className='border-r-3 border-b-3 float-end'>3x de R$ 630 — ida e volta</span></p>
-              <p className={`${font_padrao.className} p-1`}><span className='border-r-3 border-b-3'>18:00</span>Galeão<span className='border-r-3 border-b-3 float-end'>2x de R$ 504 — ida e volta</span></p>
-              <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>10:00</span>Santos Dumont<span className='border-r-3 border-b-3 float-end'>6x de R$ — 122 ida e volta</span></p>
-              <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>22:30</span>Santos Dumont<span className='border-r-3 border-b-3 float-end'>4x de R$ — 493 ida e volta</span></p>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      {/* <div className='bg-[#E25829]'>
         <div className='p-2 flex md:flex-row flex-col flex-wrap justify-around md:p-5'>
+
           <div className='group relative me-5'>
-            <h1 className={`${font_letreiro.className} text-8xl text-[#F0EFDB] cursor-pointer hover:bg-[#F0EFDB] md:transition-colors md:duration-300 hover:-skew-y-3 hover:-inset-1 hover:italic hover:text-black`}>Rio de Janeiro</h1>
-            <div className="bg-[#F0EFDB]/90 absolute top-full left-1/2 -translate-x-1/2 mb-2 hidden group-focus:block group-hover:block w-100 p-3 z-50 transition-opacity">
+            <h1 className={`${font_letreiro.className} text-4xl md:text-8xl text-[#F0EFDB] cursor-pointer hover:bg-[#F0EFDB] md:transition-colors md:duration-300 hover:-skew-y-3 hover:-inset-1 hover:italic hover:text-black select-none`}>Rio de Janeiro</h1>
+            <div className="bg-[#F0EFDB]/90 w-xs md:w-sm absolute top-full ms-50 md:ms-0 md:left-1/2 -translate-x-1/2 mb-2 hidden group-active:block group-focus:block group-hover:block w-100 p-3 z-50 transition-opacity ">
               <h1 className={`${font_titulo.className}`}>Copacabana</h1>
               <img src="/copacabana.jpg" alt="" />
               <p className={`${font_padrao.className} p-1 w-full`}><span className='border-r-3 border-b-3'>13:30</span>Santos Dumont<span className='border-r-3 border-b-3 float-end'>5x de R$ 344 — ida e volta</span></p>
-              <p className={`${font_padrao.className} p-1`}><span className='border-r-3 border-b-3'>15:30</span>Galeão<span className='border-r-3 border-b-3 float-end'>3x de R$ 630 — ida e volta</span></p>
-              <p className={`${font_padrao.className} p-1`}><span className='border-r-3 border-b-3'>18:00</span>Galeão<span className='border-r-3 border-b-3 float-end'>2x de R$ 504 — ida e volta</span></p>
-              <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>10:00</span>Santos Dumont<span className='border-r-3 border-b-3 float-end'>6x de R$ — 122 ida e volta</span></p>
-              <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>22:30</span>Santos Dumont<span className='border-r-3 border-b-3 float-end'>4x de R$ — 493 ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1`}><span className='border-r-3 border-b-3'>15:30</span>Galeão<span className='border-r-3 border-b-3 float-end'>3x de R$ 140 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1`}><span className='border-r-3 border-b-3'>18:00</span>Galeão<span className='border-r-3 border-b-3 float-end'>2x de R$ 225 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>10:00</span>Santos Dumont<span className='border-r-3 border-b-3 float-end'>6x de R$ 80 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>22:30</span>Santos Dumont<span className='border-r-3 border-b-3 float-end'>4x de R$ 115 — ida e volta</span></p>
             </div>
           </div>
-          <h1 className={`${font_letreiro.className} text-8xl text-[#F0EFDB] cursor-pointer hover:bg-[#F0EFDB] transition-colors duration-300 hover:-skew-y-3 hover:-inset-1 hover:italic hover:text-black`}>Tirana</h1>
-          <h1 className={`${font_letreiro.className} text-8xl text-[#F0EFDB] cursor-pointer hover:bg-[#F0EFDB] transition-colors duration-300 hover:-skew-y-3 hover:-inset-1 hover:italic hover:text-black`}>Antananarivo</h1>
-          <h1 className={`${font_letreiro.className} text-8xl text-[#F0EFDB] cursor-pointer hover:bg-[#F0EFDB] transition-colors duration-300 hover:-skew-y-3 hover:-inset-1 hover:italic hover:text-black`}>Paris</h1>
-          <h1 className={`${font_letreiro.className} text-8xl text-[#F0EFDB] cursor-pointer hover:bg-[#F0EFDB] transition-colors duration-300 hover:-skew-y-3 hover:-inset-1 hover:italic hover:text-black`}>Daca</h1>
-          <h1 className={`${font_letreiro.className} text-8xl text-[#F0EFDB] cursor-pointer hover:bg-[#F0EFDB] transition-colors duration-300 hover:-skew-y-3 hover:-inset-1 hover:italic hover:text-black`}>Cairo</h1>
-          <h1 className={`${font_letreiro.className} text-8xl text-[#F0EFDB] cursor-pointer hover:bg-[#F0EFDB] transition-colors duration-300 hover:-skew-y-3 hover:-inset-1 hover:italic hover:text-black`}>Berlim</h1>
-          <h1 className={`${font_letreiro.className} text-8xl text-[#F0EFDB] cursor-pointer hover:bg-[#F0EFDB] transition-colors duration-300 hover:-skew-y-3 hover:-inset-1 hover:italic hover:text-black`}>Atenas</h1>
-          <h1 className={`${font_letreiro.className} text-8xl text-[#F0EFDB] cursor-pointer hover:bg-[#F0EFDB] transition-colors duration-300 hover:-skew-y-3 hover:-inset-1 hover:italic hover:text-black`}>Tóquio</h1>
-          <div className='group relative'>
-            <h1 className={`${font_letreiro.className} text-8xl text-[#F0EFDB] cursor-pointer hover:bg-[#F0EFDB] transition-colors duration-300 hover:-skew-y-3 hover:-inset-1 hover:italic hover:text-black`}>Xangai</h1>
-            <div className="bg-[#F0EFDB]/90 absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden group-hover:block w-100 p-3 z-50 transition-opacity">
+
+          <div className='group relative me-5'>
+            <h1 className={`${font_letreiro.className} text-4xl md:text-8xl text-[#F0EFDB] cursor-pointer hover:bg-[#F0EFDB] md:transition-colors md:duration-300 hover:-skew-y-3 hover:-inset-1 hover:italic hover:text-black select-none`}>Xangai</h1>
+            <div className="bg-[#F0EFDB]/90 w-xs md:w-sm absolute top-full ms-50 md:ms-0 md:left-1/2 -translate-x-1/2 mb-2 hidden group-active:block group-focus:block group-hover:block w-100 p-3 z-50 transition-opacity ">
               <h1 className={`${font_titulo.className}`}>Xintiandi</h1>
               <img src="/xintiandi.jpg" alt="" />
-              <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>13:30</span>Xangai Pudong</p>
-              <p className={`${font_padrao.className} p-1`}><span className='border-r-3 border-b-3'>15:30</span>Xangai Pudong</p>
-              <p className={`${font_padrao.className} p-1`}><span className='border-r-3 border-b-3'>18:00</span>Xangai Pudong</p>
-              <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>10:00</span>Xangai Pudong</p>
-              <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>22:30</span>Xangai Pudong</p>
+              <p className={`${font_padrao.className} p-1 w-full`}><span className='border-r-3 border-b-3'>13:30</span>Xangai Pudong<span className='border-r-3 border-b-3 float-end'>10x de R$ 780 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1`}><span className='border-r-3 border-b-3'>15:30</span>Xangai Pudong<span className='border-r-3 border-b-3 float-end'>8x de R$ 950 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1`}><span className='border-r-3 border-b-3'>18:00</span>Xangai Pudong<span className='border-r-3 border-b-3 float-end'>6x de R$ 1.250 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>10:00</span>Xangai Pudong<span className='border-r-3 border-b-3 float-end'>12x de R$ 625 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>22:30</span>Xangai Pudong<span className='border-r-3 border-b-3 float-end'>5x de R$ 1.520 — ida e volta</span></p>
             </div>
           </div>
-          <h1 className={`${font_letreiro.className} text-8xl text-[#F0EFDB] cursor-pointer hover:bg-[#F0EFDB] transition-colors duration-300 hover:-skew-y-3 hover:-inset-1 hover:italic hover:text-black`}>Malé</h1>
-          <h1 className={`${font_letreiro.className} text-8xl text-[#F0EFDB] cursor-pointer hover:bg-[#F0EFDB] transition-colors duration-300 hover:-skew-y-3 hover:-inset-1 hover:italic hover:text-black`}>Ulan Bator</h1>
-          <h1 className={`${font_letreiro.className} text-8xl text-[#F0EFDB] cursor-pointer hover:bg-[#F0EFDB] transition-colors duration-300 hover:-skew-y-3 hover:-inset-1 hover:italic hover:text-black`}>Katmandu</h1>
-          <h1 className={`${font_letreiro.className} text-8xl text-[#F0EFDB] cursor-pointer hover:bg-[#F0EFDB] transition-colors duration-300 hover:-skew-y-3 hover:-inset-1 hover:italic hover:text-black`}>Oslo</h1>
-          <h1 className={`${font_letreiro.className} text-8xl text-[#F0EFDB] cursor-pointer hover:bg-[#F0EFDB] transition-colors duration-300 hover:-skew-y-3 hover:-inset-1 hover:italic hover:text-black`}>Seul</h1>
+
+
+          <div className='group relative me-5'>
+            <h1 className={`${font_letreiro.className} text-4xl md:text-8xl text-[#F0EFDB] cursor-pointer hover:bg-[#F0EFDB] md:transition-colors md:duration-300 hover:-skew-y-3 hover:-inset-1 hover:italic hover:text-black select-none`}>Tirana</h1>
+            <div className="bg-[#F0EFDB]/90 w-xs md:w-sm absolute top-full ms-50 md:ms-0 md:left-1/2 -translate-x-1/2 mb-2 hidden group-active:block group-focus:block group-hover:block w-100 p-3 z-50 transition-opacity ">
+              <h1 className={`${font_titulo.className}`}>Rinas</h1>
+              <img src="/tirana.jpg" alt="" />
+              <p className={`${font_padrao.className} p-1 w-full`}><span className='border-r-3 border-b-3'>13:30</span>Madre Teresa<span className='border-r-3 border-b-3 float-end'>10x de R$ 580 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1`}><span className='border-r-3 border-b-3'>15:30</span>Madre Teresa<span className='border-r-3 border-b-3 float-end'>6x de R$ 940 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1`}><span className='border-r-3 border-b-3'>18:00</span>Madre Teresa<span className='border-r-3 border-b-3 float-end'>5x de R$ 1.160 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>10:00</span>Madre Teresa<span className='border-r-3 border-b-3 float-end'>12x de R$ 465 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>22:30</span>Madre Teresa<span className='border-r-3 border-b-3 float-end'>4x de R$ 1.420 — ida e volta</span></p>
+            </div>
+          </div>
+
+          <div className='group relative me-5'>
+            <h1 className={`${font_letreiro.className} text-4xl md:text-8xl text-[#F0EFDB] cursor-pointer hover:bg-[#F0EFDB] md:transition-colors md:duration-300 hover:-skew-y-3 hover:-inset-1 hover:italic hover:text-black select-none`}>Antananarivo</h1>
+            <div className="bg-[#F0EFDB]/90 w-xs md:w-sm absolute top-full ms-50 md:ms-0 md:left-1/2 -translate-x-1/2 mb-2 hidden group-active:block group-focus:block group-hover:block w-100 p-3 z-50 transition-opacity ">
+              <h1 className={`${font_titulo.className}`}>Ivato</h1>
+              <img src="/antananarivo.jpg" alt="" />
+              <p className={`${font_padrao.className} p-1 w-full`}><span className='border-r-3 border-b-3'>13:30</span>Ivato<span className='border-r-3 border-b-3 float-end'>10x de R$ 850 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1`}><span className='border-r-3 border-b-3'>15:30</span>Ivato<span className='border-r-3 border-b-3 float-end'>6x de R$ 1.380 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1`}><span className='border-r-3 border-b-3'>18:00</span>Ivato<span className='border-r-3 border-b-3 float-end'>5x de R$ 1.660 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>10:00</span>Ivato<span className='border-r-3 border-b-3 float-end'>12x de R$ 690 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>22:30</span>Ivato<span className='border-r-3 border-b-3 float-end'>4x de R$ 2.050 — ida e volta</span></p>
+            </div>
+          </div>
+
+          <div className='group relative me-5'>
+            <h1 className={`${font_letreiro.className} text-4xl md:text-8xl text-[#F0EFDB] cursor-pointer hover:bg-[#F0EFDB] md:transition-colors md:duration-300 hover:-skew-y-3 hover:-inset-1 hover:italic hover:text-black select-none`}>Paris</h1>
+            <div className="bg-[#F0EFDB]/90 w-xs md:w-sm absolute top-full ms-50 md:ms-0 md:left-1/2 -translate-x-1/2 mb-2 hidden group-active:block group-focus:block group-hover:block w-100 p-3 z-50 transition-opacity ">
+              <h1 className={`${font_titulo.className}`}>Roissy-en-France</h1>
+              <img src="/paris.jpg" alt="" />
+              <p className={`${font_padrao.className} p-1 w-full`}><span className='border-r-3 border-b-3'>13:30</span>Charles de Gaulle<span className='border-r-3 border-b-3 float-end'>10x de R$ 450 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1`}><span className='border-r-3 border-b-3'>15:30</span>Orly<span className='border-r-3 border-b-3 float-end'>6x de R$ 730 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1`}><span className='border-r-3 border-b-3'>18:00</span>Orly<span className='border-r-3 border-b-3 float-end'>5x de R$ 860 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>10:00</span>Charles de Gaulle<span className='border-r-3 border-b-3 float-end'>12x de R$ 360 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>22:30</span>Charles de Gaulle<span className='border-r-3 border-b-3 float-end'>4x de R$ 1.100 — ida e volta</span></p>
+            </div>
+          </div>
+
+          <div className='group relative me-5'>
+            <h1 className={`${font_letreiro.className} text-4xl md:text-8xl text-[#F0EFDB] cursor-pointer hover:bg-[#F0EFDB] md:transition-colors md:duration-300 hover:-skew-y-3 hover:-inset-1 hover:italic hover:text-black select-none`}>Daca</h1>
+            <div className="bg-[#F0EFDB]/90 w-xs md:w-sm absolute top-full ms-50 md:ms-0 md:left-1/2 -translate-x-1/2 mb-2 hidden group-active:block group-focus:block group-hover:block w-100 p-3 z-50 transition-opacity ">
+              <h1 className={`${font_titulo.className}`}>Kurmitola</h1>
+              <img src="/daca.jpg" alt="" />
+              <p className={`${font_padrao.className} p-1 w-full`}><span className='border-r-3 border-b-3'>13:30</span>Hazrat Shahjalal<span className='border-r-3 border-b-3 float-end'>10x de R$ 890 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1`}><span className='border-r-3 border-b-3'>15:30</span>Hazrat Shahjalal<span className='border-r-3 border-b-3 float-end'>8x de R$ 1.080 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1`}><span className='border-r-3 border-b-3'>18:00</span>Hazrat Shahjalal<span className='border-r-3 border-b-3 float-end'>6x de R$ 1.450 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>10:00</span>Hazrat Shahjalal<span className='border-r-3 border-b-3 float-end'>12x de R$ 720 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>22:30</span>Hazrat Shahjalal<span className='border-r-3 border-b-3 float-end'>5x de R$ 1.720 — ida e volta</span></p>
+            </div>
+          </div>
+
+          <div className='group relative me-5'>
+            <h1 className={`${font_letreiro.className} text-4xl md:text-8xl text-[#F0EFDB] cursor-pointer hover:bg-[#F0EFDB] md:transition-colors md:duration-300 hover:-skew-y-3 hover:-inset-1 hover:italic hover:text-black select-none`}>Cairo</h1>
+            <div className="bg-[#F0EFDB]/90 w-xs md:w-sm absolute bottom-full md:bottom-auto md:top-full ms-50 md:ms-0 md:left-1/2 -translate-x-1/2 mb-2 hidden group-active:block group-focus:block group-hover:block w-100 p-3 z-50 transition-opacity ">
+              <h1 className={`${font_titulo.className}`}>Heliópolis</h1>
+              <img src="/cairo.jpg" alt="" />
+              <p className={`${font_padrao.className} p-1 w-full`}><span className='border-r-3 border-b-3'>13:30</span>Cairo<span className='border-r-3 border-b-3 float-end'>10x de R$ 560 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1`}><span className='border-r-3 border-b-3'>15:30</span>Cairo<span className='border-r-3 border-b-3 float-end'>8x de R$ 690 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1`}><span className='border-r-3 border-b-3'>18:00</span>Cairo<span className='border-r-3 border-b-3 float-end'>6x de R$ 910 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>10:00</span>Cairo<span className='border-r-3 border-b-3 float-end'>12x de R$ 450 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>22:30</span>Cairo<span className='border-r-3 border-b-3 float-end'>4x de R$ 1.380 — ida e volta</span></p>
+            </div>
+          </div>
+
+          <div className='group relative me-5'>
+            <h1 className={`${font_letreiro.className} text-4xl md:text-8xl text-[#F0EFDB] cursor-pointer hover:bg-[#F0EFDB] md:transition-colors md:duration-300 hover:-skew-y-3 hover:-inset-1 hover:italic hover:text-black select-none`}>Berlim</h1>
+            <div className="bg-[#F0EFDB]/90 w-xs md:w-sm absolute bottom-full ms-50 md:ms-0 md:left-1/2 -translate-x-1/2 mb-2 hidden group-active:block group-focus:block group-hover:block w-100 p-3 z-50 transition-opacity ">
+              <h1 className={`${font_titulo.className}`}>Schönefeld</h1>
+              <img src="/berlim.jpg" alt="" />
+              <p className={`${font_padrao.className} p-1 w-full`}><span className='border-r-3 border-b-3'>13:30</span>Berlim-Brandemburgo<span className='border-r-3 border-b-3 float-end'>10x de R$ 480 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1`}><span className='border-r-3 border-b-3'>15:30</span>Berlim-Brandemburgo<span className='border-r-3 border-b-3 float-end'>6x de R$ 780 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1`}><span className='border-r-3 border-b-3'>18:00</span>Berlim-Brandemburgo<span className='border-r-3 border-b-3 float-end'>5x de R$ 920 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>10:00</span>Berlim-Brandemburgo<span className='border-r-3 border-b-3 float-end'>12x de R$ 390 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>22:30</span>Berlim-Brandemburgo<span className='border-r-3 border-b-3 float-end'>4x de R$ 1.180 — ida e volta</span></p>
+            </div>
+          </div>
+
+          <div className='group relative me-5'>
+            <h1 className={`${font_letreiro.className} text-4xl md:text-8xl text-[#F0EFDB] cursor-pointer hover:bg-[#F0EFDB] md:transition-colors md:duration-300 hover:-skew-y-3 hover:-inset-1 hover:italic hover:text-black select-none`}>Atenas</h1>
+            <div className="bg-[#F0EFDB]/90 w-xs md:w-sm absolute bottom-full ms-50 md:ms-0 md:left-1/2 -translate-x-1/2 mb-2 hidden group-active:block group-focus:block group-hover:block w-100 p-3 z-50 transition-opacity ">
+              <h1 className={`${font_titulo.className}`}>Spata</h1>
+              <img src="/atenas.jpg" alt="" />
+              <p className={`${font_padrao.className} p-1 w-full`}><span className='border-r-3 border-b-3'>13:30</span>Atenas<span className='border-r-3 border-b-3 float-end'>10x de R$ 520 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1`}><span className='border-r-3 border-b-3'>15:30</span>Atenas<span className='border-r-3 border-b-3 float-end'>8x de R$ 630 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1`}><span className='border-r-3 border-b-3'>18:00</span>Atenas<span className='border-r-3 border-b-3 float-end'>5x de R$ 1.020 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>10:00</span>Atenas<span className='border-r-3 border-b-3 float-end'>12x de R$ 420 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>22:30</span>Atenas<span className='border-r-3 border-b-3 float-end'>4x de R$ 1.280 — ida e volta</span></p>
+            </div>
+          </div>
+
+          <div className='group relative me-5'>
+            <h1 className={`${font_letreiro.className} text-4xl md:text-8xl text-[#F0EFDB] cursor-pointer hover:bg-[#F0EFDB] md:transition-colors md:duration-300 hover:-skew-y-3 hover:-inset-1 hover:italic hover:text-black select-none`}>Tóquio</h1>
+            <div className="bg-[#F0EFDB]/90 w-xs md:w-sm absolute bottom-full ms-50 md:ms-0 md:left-1/2 -translate-x-1/2 mb-2 hidden group-active:block group-focus:block group-hover:block w-100 p-3 z-50 transition-opacity ">
+              <h1 className={`${font_titulo.className}`}>Ōta</h1>
+              <img src="/tokyo.jpg" alt="" />
+              <p className={`${font_padrao.className} p-1 w-full`}><span className='border-r-3 border-b-3'>13:30</span>Tóquio<span className='border-r-3 border-b-3 float-end'>10x de R$ 720 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1`}><span className='border-r-3 border-b-3'>15:30</span>Tóquio<span className='border-r-3 border-b-3 float-end'>8x de R$ 890 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1`}><span className='border-r-3 border-b-3'>18:00</span>Tóquio<span className='border-r-3 border-b-3 float-end'>6x de R$ 1.180 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>10:00</span>Tóquio<span className='border-r-3 border-b-3 float-end'>12x de R$ 580 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>22:30</span>Tóquio<span className='border-r-3 border-b-3 float-end'>5x de R$ 1.420 — ida e volta</span></p>
+            </div>
+          </div>
+
+          <div className='group relative me-5'>
+            <h1 className={`${font_letreiro.className} text-4xl md:text-8xl text-[#F0EFDB] cursor-pointer hover:bg-[#F0EFDB] md:transition-colors md:duration-300 hover:-skew-y-3 hover:-inset-1 hover:italic hover:text-black select-none`}>Malé</h1>
+            <div className="bg-[#F0EFDB]/90 w-xs md:w-sm absolute bottom-full ms-50 md:ms-0 md:left-1/2 -translate-x-1/2 mb-2 hidden group-active:block group-focus:block group-hover:block w-100 p-3 z-50 transition-opacity ">
+              <h1 className={`${font_titulo.className}`}>Ilha de Hulhulé</h1>
+              <img src="/maldivas.jpg" alt="" />
+              <p className={`${font_padrao.className} p-1 w-full`}><span className='border-r-3 border-b-3'>13:30</span>Velana<span className='border-r-3 border-b-3 float-end'>10x de R$ 790 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1`}><span className='border-r-3 border-b-3'>15:30</span>Velana<span className='border-r-3 border-b-3 float-end'>8x de R$ 980 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1`}><span className='border-r-3 border-b-3'>18:00</span>Velana<span className='border-r-3 border-b-3 float-end'>6x de R$ 1.290 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>10:00</span>Velana<span className='border-r-3 border-b-3 float-end'>12x de R$ 640 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>22:30</span>Velana<span className='border-r-3 border-b-3 float-end'>5x de R$ 1.550 — ida e volta</span></p>
+            </div>
+          </div>
+
+          <div className='group relative me-5'>
+            <h1 className={`${font_letreiro.className} text-4xl md:text-8xl text-[#F0EFDB] cursor-pointer hover:bg-[#F0EFDB] md:transition-colors md:duration-300 hover:-skew-y-3 hover:-inset-1 hover:italic hover:text-black select-none`}>Ulan Bator</h1>
+            <div className="bg-[#F0EFDB]/90 w-xs md:w-sm absolute bottom-full ms-50 md:ms-0 md:left-1/2 -translate-x-1/2 mb-2 hidden group-active:block group-focus:block group-hover:block w-100 p-3 z-50 transition-opacity ">
+              <h1 className={`${font_titulo.className}`}>Khöshig</h1>
+              <img src="/mongolia.jpg" alt="" />
+              <p className={`${font_padrao.className} p-1 w-full`}><span className='border-r-3 border-b-3'>13:30</span>Chinggis Khaan<span className='border-r-3 border-b-3 float-end'>10x de R$ 920 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1`}><span className='border-r-3 border-b-3'>15:30</span>Chinggis Khaan<span className='border-r-3 border-b-3 float-end'>8x de R$ 1.150 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1`}><span className='border-r-3 border-b-3'>18:00</span>Chinggis Khaan<span className='border-r-3 border-b-3 float-end'>6x de R$ 1.520 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>10:00</span>Chinggis Khaan<span className='border-r-3 border-b-3 float-end'>12x de R$ 740 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>22:30</span>Chinggis Khaan<span className='border-r-3 border-b-3 float-end'>5x de R$ 1.810 — ida e volta</span></p>
+            </div>
+          </div>
+
+          <div className='group relative me-5'>
+            <h1 className={`${font_letreiro.className} text-4xl md:text-8xl text-[#F0EFDB] cursor-pointer hover:bg-[#F0EFDB] md:transition-colors md:duration-300 hover:-skew-y-3 hover:-inset-1 hover:italic hover:text-black select-none`}>Oslo</h1>
+            <div className="bg-[#F0EFDB]/90 w-xs md:w-sm absolute bottom-full ms-50 md:ms-0 md:left-1/2 -translate-x-1/2 mb-2 hidden group-active:block group-focus:block group-hover:block w-100 p-3 z-50 transition-opacity ">
+              <h1 className={`${font_titulo.className}`}>Gardermoen</h1>
+              <img src="/noruega.jpg" alt="" />
+              <p className={`${font_padrao.className} p-1 w-full`}><span className='border-r-3 border-b-3'>13:30</span>Oslo Gardermoen<span className='border-r-3 border-b-3 float-end'>10x de R$ 510 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1`}><span className='border-r-3 border-b-3'>15:30</span>Oslo Gardermoen<span className='border-r-3 border-b-3 float-end'>8x de R$ 620 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1`}><span className='border-r-3 border-b-3'>18:00</span>Oslo Gardermoen<span className='border-r-3 border-b-3 float-end'>5x de R$ 1.000 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>10:00</span>Oslo Gardermoen<span className='border-r-3 border-b-3 float-end'>12x de R$ 410 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>22:30</span>Oslo Gardermoen<span className='border-r-3 border-b-3 float-end'>4x de R$ 1.250 — ida e volta</span></p>
+            </div>
+          </div>
+
+          <div className='group relative me-5'>
+            <h1 className={`${font_letreiro.className} text-4xl md:text-8xl text-[#F0EFDB] cursor-pointer hover:bg-[#F0EFDB] md:transition-colors md:duration-300 hover:-skew-y-3 hover:-inset-1 hover:italic hover:text-black select-none`}>Seul</h1>
+            <div className="bg-[#F0EFDB]/90 w-xs md:w-sm absolute bottom-full ms-50 md:ms-0 md:left-1/2 -translate-x-1/2 mb-2 hidden group-active:block group-focus:block group-hover:block w-100 p-3 z-50 transition-opacity ">
+              <h1 className={`${font_titulo.className}`}>Jung-gu</h1>
+              <img src="/seul.jpg" alt="" />
+              <p className={`${font_padrao.className} p-1 w-full`}><span className='border-r-3 border-b-3'>13:30</span>Incheon<span className='border-r-3 border-b-3 float-end'>10x de R$ 740 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1`}><span className='border-r-3 border-b-3'>15:30</span>Incheon<span className='border-r-3 border-b-3 float-end'>8x de R$ 910 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1`}><span className='border-r-3 border-b-3'>18:00</span>Incheon<span className='border-r-3 border-b-3 float-end'>6x de R$ 1.210 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>10:00</span>Incheon<span className='border-r-3 border-b-3 float-end'>12x de R$ 590 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>22:30</span>Incheon<span className='border-r-3 border-b-3 float-end'>5x de R$ 1.450 — ida e volta</span></p>
+            </div>
+          </div>
+
+          <div className='group relative me-5'>
+            <h1 className={`${font_letreiro.className} text-4xl md:text-8xl text-[#F0EFDB] cursor-pointer hover:bg-[#F0EFDB] md:transition-colors md:duration-300 hover:-skew-y-3 hover:-inset-1 hover:italic hover:text-black select-none`}>Katmandu</h1>
+            <div className="bg-[#F0EFDB]/90 w-xs md:w-sm absolute bottom-full ms-50 md:ms-0 md:left-1/2 -translate-x-1/2 mb-2 hidden group-active:block group-focus:block group-hover:block w-100 p-3 z-50 transition-opacity ">
+              <h1 className={`${font_titulo.className}`}>Sinamangal</h1>
+              <img src="/nepal.jpg" alt="" />
+              <p className={`${font_padrao.className} p-1 w-full`}><span className='border-r-3 border-b-3'>13:30</span>Tribhuvan<span className='border-r-3 border-b-3 float-end'>10x de R$ 820 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1`}><span className='border-r-3 border-b-3'>15:30</span>Tribhuvan<span className='border-r-3 border-b-3 float-end'>8x de R$ 1.010 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1`}><span className='border-r-3 border-b-3'>18:00</span>Tribhuvan<span className='border-r-3 border-b-3 float-end'>6x de R$ 1.350 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>10:00</span>Tribhuvan<span className='border-r-3 border-b-3 float-end'>12x de R$ 660 — ida e volta</span></p>
+              <p className={`${font_padrao.className} p-1 `}><span className='border-r-3 border-b-3'>22:30</span>Tribhuvan<span className='border-r-3 border-b-3 float-end'>5x de R$ 1.620 — ida e volta</span></p>
+            </div>
+          </div>
+
         </div>
-      </div> */}
+
+      </div>
 
     </div>
   )

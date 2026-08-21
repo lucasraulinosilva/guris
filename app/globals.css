@@ -1,6 +1,10 @@
 @import "tailwindcss";
 @import "tailwindcss-animated";
 
+html, body {
+  overscroll-behavior-y: none; /* Impede o efeito bounce no eixo vertical */
+}
+
 @keyframes marquee-x {
   from {
     transform: translateX(0);
